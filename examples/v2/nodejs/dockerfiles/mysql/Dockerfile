@@ -4,7 +4,7 @@
 ############################################################
 
 # Use Ubuntu as base image
-FROM ubuntu
+FROM ubuntu:22.04
 
 # Disable upstart because it doesn’t work with Docker
 RUN dpkg-divert --local --rename --add /sbin/initctl
