@@ -4,7 +4,7 @@
 ############################################################
 
 # Use Ubuntu as base image
-FROM ubuntu
+FROM ubuntu:kinetic-20220830
 
 # Disable upstart because it doesn’t work with Docker
 RUN dpkg-divert --local --rename --add /sbin/initctl
